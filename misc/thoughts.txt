@@ -1,0 +1,8 @@
+device_id --> event_id --> app_id --> label_id --> (app) category
+
+Possible features:
+phone_brand, device_model, timestamp, longitude, latitude, category, is_installed, is_active
+
+Note: 
+1) device_id is not unique; it may correspond to several phone_brand and device_model
+2) gender_age.csv and events.csv only have partial device_id in common, which means that we can only use the common rows as training/test data
