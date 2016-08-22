@@ -38,4 +38,4 @@ col_name = np.load(os.path.join(loaddir,'submit_col_name.npy'))
 pred = pd.DataFrame(ysubmit, index=row_index, columns=col_name)
 pred.head()
 
-pred.to_csv(os.path.join(loaddir,'submission.csv'),index=True)
+pred.to_csv(os.path.join('../results','submission.csv'),index=True)
