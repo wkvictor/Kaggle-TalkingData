@@ -2,10 +2,15 @@ from __future__ import print_function
 import pandas as pd
 import numpy as np
 import os
+import sys
 
 from scipy.sparse import csr_matrix, hstack
 from sklearn.preprocessing import LabelEncoder
 
+if sys.platform == 'darwin':
+  os.chdir('/Users/Victor/Downloads/Kaggle-TalkingData/source')   # MacOS
+else:
+  os.chdir('C:\Users\Kun Wang\Documents\Kaggle\Kaggle-TalkingData\source')  # Windows
 
 datadir = '../input'
 
